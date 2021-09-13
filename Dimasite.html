@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Мой сайт</title>
+</head>
+
+
+<body background="https://catherineasquithgallery.com/uploads/posts/2021-02/1613641777_54-p-fon-dlya-prezentatsii-trava-74.jpg">
+<body text=7>
+<b>
+
+<h1 align="center">Добро пожаловать</h1>
+
+<big><p align="center">Это мой сайт.Здесь я буду публиковать своего рода важную информацию для класса !</p>
+<p align="center">Это первая пробная версия так что если знаете как его усовершенствовать пишите мне в Вк!                        <a href=https://vk.com/dronz234> Мой ВК  </a></p></big> 
+ <p align="center"><button> на потыкай </button></p><br>
+<h1>Чат</h1> <big><p align="center">Хмм..И что бы еще добавить.нужно что то интересное неординарное нечто что отличало бы этот сайт от других.  </p></big><br>
+<textarea placeholder="Напишите сообщение"></textarea><br>
+<button onclick="send()">Отправить сообщение</button>
+<ul>
+  
+
+</ul>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script> 
+ <script>
+      function send() {
+      let text = document.querySelector('textarea').value;
+ console.log(document.querySelector('ul').innerHTML = text);
+ $.ajax({
+      type:"POST",
+      url: 'dima.php',
+      data: {
+        
+          'text': text
+      }
+ });
+ }
+    </script>
+
+
+
+
+</b>
+</body>
+
+</html>
